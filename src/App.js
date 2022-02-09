@@ -36,7 +36,7 @@ function App() {
       backgroundAttachment: 'fixed',
     }}
     id="contact"
-    flexDirection={'row'}
+    flexDirection={{base:'column', md:'row'}}
     >
     <Box
       borderRadius="lg"
@@ -59,7 +59,7 @@ function App() {
     </Box>
     <Stack>
           <Box >
-            <Heading>Lista tareas</Heading>
+            {tareas.length !== 0 && <Heading>Lista tareas</Heading> }
           </Box>
           <Box>
             {
